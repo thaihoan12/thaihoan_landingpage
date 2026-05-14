@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đào tạo AI Viettel | Hướng dẫn tạo Slide cơ bản & Nâng cao</title>
+    <meta name="description" content="Chương trình đào tạo nội bộ dành cho CBCNV VTNet - Làm chủ AI để bứt phá hiệu suất công việc.">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Barlow:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Animate on Scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <style>
+        :root {
+            --viettel-red: #EE0033;
+            --dark-gray: #1A1A1A;
+            --secondary-blue: #005596; /* Màu phụ đề nghị cho Brand Viettel */
+        }
+        body {
+            font-family: 'Barlow', 'Montserrat', sans-serif;
+            color: var(--dark-gray);
+            scroll-behavior: smooth;
+        }
+        .text-viettel { color: var(--viettel-red); }
+        .bg-viettel { background-color: var(--viettel-red); }
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(238, 0, 51, 0.1);
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #ffffff 0%, #f9f9f9 100%);
+        }
+        .btn-hover:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(238, 0, 51, 0.3);
+            transition: all 0.3s ease;
+        }
+        .card-shadow:hover {
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-white">
+
+    <!-- SECTION 01: NAVIGATION BAR -->
+    <nav class="fixed w-full z-50 glass-nav">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex items-center space-x-2">
+                    <div class="h-10 w-32 bg-slate-200 flex items-center justify-center rounded">
+                        <span class="font-bold text-viettel">VTNet / Viettel</span>
+                    </div>
+                </div>
+                <div class="hidden md:flex space-x-8 font-semibold">
+                    <a href="#about" class="hover:text-viettel transition">Thông tin</a>
+                    <a href="#content" class="hover:text-viettel transition">Nội dung</a>
+                    <a href="#benefits" class="hover:text-viettel transition">Quyền lợi</a>
+                    <a href="#logistics" class="hover:text-viettel transition">Địa điểm</a>
+                </div>
+                <div>
+                    <a href="#register" class="bg-viettel text-white px-6 py-2 rounded-full font-bold btn-hover inline-block">Đăng ký ngay</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- SECTION 02: HERO SECTION -->
+    <section class="pt-32 pb-20 hero-gradient overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2" data-aos="fade-right">
+                <span class="inline-block px-4 py-1 rounded-full bg-red-100 text-viettel font-bold text-sm mb-6 uppercase tracking-wider italic">
+                    Chương trình Đào tạo Nội bộ dành cho CBCNV
+                </span>
+                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6">
+                    HƯỚNG DẪN TẠO SLIDE BẰNG <span class="text-viettel">AI</span> CƠ BẢN VÀ NÂNG CAO
+                </h1>
+                <p class="text-lg text-gray-600 mb-8 max-w-lg leading-relaxed">
+                    Trang bị kỹ năng sử dụng công cụ AI để thiết kế slide chuyên nghiệp, tối ưu hóa quy trình báo cáo và bứt phá hiệu suất làm việc hàng ngày.
+                </p>
+                <div class="flex space-x-4">
+                    <a href="#register" class="bg-viettel text-white px-8 py-4 rounded-lg font-bold text-lg btn-hover">Đăng ký tham gia ngay</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 mt-12 md:mt-0 relative" data-aos="zoom-in">
+                <!-- Placeholder image for AI Illustration -->
+                <div class="relative z-10 rounded-2xl shadow-2xl overflow-hidden border-4 border-white">
+                    <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=800" alt="AI Tech Illustration">
+                </div>
+                <div class="absolute -top-10 -right-10 w-64 h-64 bg-red-50 rounded-full mix-blend-multiply filter blur-3xl opacity-70"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 03: KEY BENEFITS -->
+    <section id="benefits" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold mb-12" data-aos="fade-up">Tại sao bạn không nên bỏ lỡ?</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-8 border rounded-2xl card-shadow transition" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-16 h-16 bg-red-50 flex items-center justify-center rounded-xl mx-auto mb-6">
+                        <svg class="w-8 h-8 text-viettel" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h3 class="font-bold text-xl mb-4 text-viettel">Đáp ứng KNL</h3>
+                    <p class="text-gray-600 italic font-semibold">Hoàn thiện Khung năng lực & Nhận chứng nhận hoàn thành từ đơn vị.</p>
+                </div>
+                <div class="p-8 border rounded-2xl card-shadow transition" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-16 h-16 bg-blue-50 flex items-center justify-center rounded-xl mx-auto mb-6">
+                        <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    </div>
+                    <h3 class="font-bold text-xl mb-4 text-blue-600">Làm chủ công cụ</h3>
+                    <p class="text-gray-600">Sử dụng thành thạo Claude, Gemini, Canva và các AI tạo hình ảnh chuyên sâu.</p>
+                </div>
+                <div class="p-8 border rounded-2xl card-shadow transition" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-16 h-16 bg-green-50 flex items-center justify-center rounded-xl mx-auto mb-6">
+                        <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z"></path></svg>
+                    </div>
+                    <h3 class="font-bold text-xl mb-4 text-green-600">Tối ưu hiệu suất</h3>
+                    <p class="text-gray-600">X2 tốc độ tạo báo cáo, công văn và thiết kế Landing Page thực tế.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 04: COURSE CONTENT -->
+    <section id="content" class="py-20 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12">Lộ trình Đào tạo</h2>
+            <div class="space-y-4">
+                <!-- Part 1 -->
+                <div class="bg-white rounded-xl shadow p-6 border-l-4 border-viettel" data-aos="fade-left">
+                    <h3 class="text-xl font-bold mb-2">PHẦN 1: Kỹ năng AI Cơ bản</h3>
+                    <ul class="list-disc list-inside text-gray-600 space-y-2">
+                        <li>Kỹ thuật Prompting cơ bản cho Slide.</li>
+                        <li>Cấu trúc tài liệu chuẩn theo quy định Tập đoàn.</li>
+                        <li>Ứng dụng AI nhận diện thương hiệu Viettel (Màu sắc, Logo).</li>
+                        <li>Tối ưu hóa layout bằng Canva AI.</li>
+                    </ul>
+                </div>
+                <!-- Part 2 -->
+                <div class="bg-white rounded-xl shadow p-6 border-l-4 border-blue-600" data-aos="fade-left" data-aos-delay="200">
+                    <h3 class="text-xl font-bold mb-2">PHẦN 2: Kỹ năng AI Nâng cao</h3>
+                    <ul class="list-disc list-inside text-gray-600 space-y-2">
+                        <li>Kỹ năng Claude chuyên sâu: Xử lý dữ liệu lớn.</li>
+                        <li>Thiết kế Landing Page thực tế không cần code.</li>
+                        <li>Tự động hóa quy trình làm báo cáo hàng tuần.</li>
+                        <li>Thực hành dự án thực tế tại lớp.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 05: LOGISTICS -->
+    <section id="logistics" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-gray-50 p-6 rounded-2xl flex items-center space-x-4">
+                    <div class="text-viettel"><svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg></div>
+                    <div>
+                        <p class="text-sm text-gray-500 uppercase font-bold">Thời gian</p>
+                        <p class="font-bold">08:00 – 12:00, 05/06/2026</p>
+                    </div>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-2xl flex items-center space-x-4">
+                    <div class="text-viettel"><svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg></div>
+                    <div>
+                        <p class="text-sm text-gray-500 uppercase font-bold">Địa điểm</p>
+                        <p class="font-bold">Tầng G – Tòa nhà Thái Bình (Hoặc Zoom)</p>
+                    </div>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-2xl flex items-center space-x-4">
+                    <div class="text-viettel"><svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg></div>
+                    <div>
+                        <p class="text-sm text-gray-500 uppercase font-bold">Giảng viên</p>
+                        <p class="font-bold">Đ/c Đặng Thế Thái Hoàn</p>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 p-4 bg-yellow-50 rounded-lg text-center border border-yellow-200">
+                <p class="text-yellow-800 font-semibold">⚠️ Yêu cầu: Mang laptop cá nhân và chuẩn bị sẵn tài khoản AI cá nhân.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 06: TESTIMONIALS (Optional) -->
+    <section class="py-16 bg-gray-50 italic text-center">
+        <div class="max-w-2xl mx-auto px-4">
+            <p class="text-2xl font-light text-gray-600 mb-6">"AI không thay thế con người, nhưng người biết sử dụng AI sẽ thay thế những người không biết."</p>
+            <p class="font-bold text-viettel">— Hơn 500+ CBCNV đã tham gia và thay đổi cách làm việc</p>
+        </div>
+    </section>
+
+    <!-- SECTION 07: FINAL CTA -->
+    <section id="register" class="py-20 bg-viettel text-white relative overflow-hidden">
+        <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
+            <h2 class="text-3xl md:text-5xl font-bold mb-6">Sẵn sàng làm chủ AI và bứt phá hiệu suất?</h2>
+            <p class="text-xl mb-10 opacity-90 italic">Nhanh tay lên! Hạn cuối đăng ký: <span class="font-bold underline">03/06/2026</span></p>
+            <a href="https://docs.google.com/forms/your-link" target="_blank" class="bg-white text-viettel px-10 py-5 rounded-full font-extrabold text-xl btn-hover inline-block uppercase tracking-widest shadow-2xl">Điền Form Đăng Ký Ngay</a>
+        </div>
+        <!-- Decorative Circle -->
+        <div class="absolute -bottom-20 -left-20 w-80 h-80 bg-white opacity-5 rounded-full"></div>
+    </section>
+
+    <!-- SECTION 08: FOOTER -->
+    <footer class="py-10 bg-gray-900 text-gray-400 text-center border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4">
+            <p class="mb-4">Mọi thắc mắc vui lòng liên hệ:</p>
+            <div class="space-y-1">
+                <p class="text-white font-bold">Đ/c Nguyễn Thị Long – Phòng Nhân sự</p>
+                <p>Hotline: <span class="text-viettel">0989 208 017</span></p>
+                <p>Email: <a href="mailto:dphh@viettel.com.vn" class="hover:text-white underline">dphh@viettel.com.vn</a></p>
+            </div>
+            <div class="mt-10 pt-10 border-t border-gray-800 text-xs uppercase tracking-widest">
+                © 2026 VTNet - Công ty Mạng lưới Viettel. Internal Training Only.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Khởi tạo hiệu ứng cuộn trang
+        AOS.init({
+            duration: 800,
+            once: true,
+        });
+    </script>
+</body>
+</html>
